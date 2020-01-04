@@ -12,3 +12,20 @@ for (let input of [creditCard, veggieSelect, checkbox]) {
     console.log(formData);
   });
 }
+
+const fakeRequest = () => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      const rand = Math.random();
+      if (rand < 0.3) {
+        reject();
+      } else {
+        resolve();
+      }
+    }, 3000);
+  });
+};
+
+fakeRequest()
+  .then(() => console.log("it worked"))
+  .catch(() => console.log("no work"));
