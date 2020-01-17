@@ -1,1 +1,15 @@
-[{ "email": "stevenpaulino1@hotmail.com" }]
+[
+  {
+    "email": "stevenpaulino1@hotmail.com"
+  },
+  {
+    "email": "juan@gmail.com",
+    "password": "1234567",
+    "id": "e742ee30"
+  },
+  {
+    "email": "51k2ps@gmail.com",
+    "password": "1234567",
+    "id": "98bf504e"
+  }
+]
