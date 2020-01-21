@@ -16,6 +16,7 @@ class UsersRepository {
       fs.writeFileSync(this.filename, "[]");
     }
   }
+
   async getAll() {
     return JSON.parse(
       await fs.promises.readFile(this.filename, {
@@ -39,6 +40,7 @@ class UsersRepository {
     await this.writeAll(records);
     return record;
   }
+
   async comparePasswords(savedDbPassword, suppliedPassword) {
     // const result = savedDbPassword.split(".");
     // const hashed = result[0];
